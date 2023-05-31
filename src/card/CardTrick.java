@@ -39,6 +39,11 @@ public class CardTrick {
            magicHand[i] = c; 
         }
         
+        //hard-coded luckyCard
+        Card luckyCard = new Card(); 
+        luckyCard.setValue(8);
+        luckyCard.setSuit("Diamonds"); 
+        
         //insert code to ask the user for Card value and suit, create their card
         Scanner input = new Scanner(System.in); 
         
