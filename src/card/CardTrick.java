@@ -44,21 +44,8 @@ public class CardTrick {
         luckyCard.setValue(8);
         luckyCard.setSuit("Diamonds"); 
         
-        //insert code to ask the user for Card value and suit, create their card
-        Scanner input = new Scanner(System.in); 
-        
-        System.out.println("Enter your card value: "); 
-        int userVal = input.nextInt(); 
-        
-        if (!(userVal > 0 && userVal < 14)) {
-            System.out.println("Invalid Input!"); 
-            System.exit(0); 
-        }
-        
-        input.nextLine(); 
-        
-        System.out.println("Enter your card suit (first letter capital): ");
-        String userSuit = input.nextLine(); 
+        int userVal = luckyCard.getValue(); 
+        String userSuit = luckyCard.getSuit(); 
         
         boolean found = false; 
         // and search magicHand here
